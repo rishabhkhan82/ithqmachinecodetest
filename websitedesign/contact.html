@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap CSS CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- Site External CSS Link -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>The Avengers - An Epic Adventure</title>
+    </head>
+<body>
+    <div class="container-fluid">
+    	<div class="row">
+            <!-- Top Bar -->
+            <div class="col-12 bg-secondary"> 
+                <div class="d-flex flex-md-row flex-wrap align-items-center px-0 px-md-2 px-lg-5 py-2">
+                    <!-- Top Bar Left Section -->
+                    <div class="col-12 col-md-8 text-center text-md-start">
+                        <a href="#" title="" class="text-decoration-none text-dark">
+                            <span class="fa fa-question-circle top-bar-icons">
+                                
+                            </span>
+                            Have any questions? +088 199990 or mail@theavengers
+                        </a>
+                    </div>
+                    <!-- Top Bar Right Section -->
+                    <div class="col-12 col-md-4">
+                        <div class="d-flex justify-content-start justify-content-md-end">
+                            <div class="order-1 order-md-1">
+                                <a href="#" title="" class="text-decoration-none text-dark">
+                                    <span class="fas fa-lock top-bar-icons">
+
+                                    </span>
+                                    Login
+                                </a>
+                            </div>
+                            <div class="order-3 order-md-2 ms-auto ms-md-0">
+                                <a href="#" title="" class="text-decoration-none text-dark ms-md-3">
+                                    <span class="fas fa-comments top-bar-icons">
+
+                                    </span>
+                                    Live Chat
+                                </a>
+                            </div>
+                            <div class="order-2 order-md-3 ms-3" style="position: relative; top: 2.4px;">
+                                <div id="toggle-but-cont" onclick="myFunction()">
+                                    <span class="fa fa-moon-o top-bar-icons" id="icon-left"></span>
+                                    <span class="fa fa-sun-o top-bar-icons" id="icon-right"></span>
+                                    <div id="circle-button-cont">
+                                        <button type="button" id="circle-but" onclick="myFunction2()">
+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation Menu Bar -->
+    <div class="container-fluid sticky-top">
+        <div class="row">
+            <div class="col-12" style="background-color: navy;
+            ">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                        <a href="#" title="" class="navbar-brand fw-bold fs-2 ms-md-4">
+                            <img src="img/sitelogo.png" alt="" width="60" height="60" class="rounded-circle"> 
+                            <span>Avengers</span>
+                        </a>
+                        <button type="button" class="navbar-toggler me-md-4" data-bs-toggle="collapse" data-bs-target="#collapsediv">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsediv">
+                            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                                <li class="nav-item">
+                                    <a href="index.html" title="" class="nav-link px-2 px-md-5 px-lg-2 px-xl-4 text-white">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="Characters.html" title="" class="nav-link
+                                    text-white px-2 px-md-5 px-lg-2 px-xl-4 text-white">
+                                        Characters
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" title="" class="nav-link
+                                     px-2 px-md-5 px-lg-2 px-xl-4 active" style="color: darkred; font-weight: bold;">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="d-flex">
+                                <button type="button" class="btn px-4 me-md-4 ms-2 ms-md-5 ms-lg-4 text-white get-vip-pass-button" style="background-color: darkred;">
+                                    Get VIP Passes<span style="color: red;"> *</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Filter Search Section -->
+    <div class="container-fluid" style="box-shadow: 0px 0px 5px grey; margin-bottom: 4px; background-color: #212529;" id="filter-section">
+        <div class="row px-5 py-3 g-3 g-sm-3">
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="input-group">
+                    <div class="input-group-text" style="background-color: white;">
+                        <span class="fa fa-location-arrow booking-form-icons">
+                            
+                        </span>
+                    </div>
+                    <input type="text" name="search" class="form-control" placeholder="Enter Location" style="border: 1px solid lightgrey; border-left: none;">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="input-group">
+                    <span class="input-group-text" style="background-color: white;">
+                        <span class="fa fa-film booking-form-icons">
+                            
+                        </span>
+                    </span>
+                    <input type="text" name="search" class="form-control" placeholder="Enter Theatre Name" style="border: 1px solid lightgrey; border-left: none;">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="input-group" >
+                    <span class="input-group-text" style="background-color: white;">
+                        <span class="fas fa-bars booking-form-icons">
+                            
+                        </span>
+                    </span>
+                    <input type="text" name="search" class="form-control" placeholder="Enter Categories" style="border: 1px solid lightgrey; border-left: none;">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <button type="button" class="btn btn-dark text-white float-end px-lg-3 px-xl-5">
+                    <span class="fab fa-amazon-pay text-warning me-2"></span>
+                    Book Your E-Tickets
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Feel Free To Fill A Contact Form -->
+    <div class="container-fluid" style="background-color: #212529;" id="welcome-section-two">  
+        <div class="row pt-5">
+            <div class="col-12">
+                <div class="card-body">
+                    <h1 class="card-title text-center" style="color: #6c757d;" id="welcome-heading">
+                        Feel Free To Fill A Contact Form
+                    </h1>
+                    <p class="text-center text-secondary">
+                        To get in touch with us in easiest way
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Form Section -->
+    <div class="container-fluid" style="background-color: rgba(139,0,0,0.9);" id="form-section">
+        <div class="row">
+            <div class="col-12 col-lg-3 px-0 res-border-right">
+                <div class="d-flex flex-wrap align-content-center vh-100"> 
+                    <div class="w-100 rounded-circle" style="border-top: 20px solid black; padding-top: 50px;"> 
+                        <img src="img/img11.jpg" alt="NoImage" class="img-fluid rounded-circle mx-auto d-block" width="200px" height="100px" style="border: 10px solid black;">
+                        <h5 class="mx-auto text-center pb-0 mb-0">Marvel</h5>
+                        <p class="mb-0 mx-auto text-center text-white">marvel@gmail.com</p>  
+                    </div>
+                </div> 
+            </div>   
+            <div class="col-12 col-lg-5 px-4"> 
+                <h4 class="mt-5">Enter Details</h4>
+                <form action="#" method="post" accept-charset="utf-8">
+                    <div class="row">
+        
+                        <div class="col-12"> 
+                            <label for="name">Name :
+                                <span style="color: red">*</span>
+                                <span id="nameError" class="ms-3" style="color: white; text-align: right; display: none;">
+                                </span> 
+                            </label>
+                            <input type="text" name="name" id="name" placeholder="First Name" class="form-control"> 
+                        </div> 
+                        <div class="col-12 mt-3"> 
+                            <label for="surname">Surname :
+                                <span style="color: red">*</span>
+                                <span id="surnameError" class="ms-3" style="color: white; text-align: right; display: none;">
+                                </span>
+                            </label>
+                            <input type="text" name="surname" id="surname" placeholder="SurName" class="form-control"> 
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <label for="number">Phone Number :
+                            <span style="color: red">*</span>
+                            <span id="numberError" class="ms-3" style="color: white; text-align: right; display: none;">
+                            </span> 
+                        </label>
+                        <input type="text" name="number" id="number" placeholder="enter phone number" class="form-control"> 
+                    </div>
+                    <div class="mt-3">
+                        <label for="email">Email ID :
+                            <span style="color: red">*</span>
+                            <span id="emailError" class="ms-3" style="color: white; text-align: right; display: none;">
+                            </span> 
+                        </label>
+                        <input type="email" name="email" id="email" placeholder="enter email id" class="form-control"> 
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-6 float-start"> 
+                            <label for="country">Country :
+                                <span style="color: red">*</span>
+                                <span id="countryError" class="ms-3" style="color: white; text-align: right; display: none;">
+                                </span> 
+                            </label>
+                            <input type="text" name="country" id="country" placeholder="Country" class="form-control"> 
+                        </div> 
+                        <div class="col-6 float-end"> 
+                            <label for="stateregion">State/Region :
+                                <span style="color: red">*</span>
+                                <span id="stateregionError" class="ms-3" style="color: white; text-align: right; display: none;">
+                                </span>  
+                            </label>
+                            <input type="text" name="stateregion" id="stateregion" placeholder="State" class="form-control"> 
+                        </div>
+                        <div class="mt-3">
+                        <label for="edcation">Message :
+                            <span style="color: red">*</span>
+                            <span id="educationError" class="ms-3" style="color: white; text-align: right; display: none;">
+                            </span> 
+                        </label>
+                        <input type="text" name="education" id="education" placeholder="write some text" class="form-control"> 
+                    </div>
+                    </div>
+                    <input type="submit" value="Send Message" onclick="return submitFunction();" class="btn col-12 mt-3 border border-2 border-dark text-white mb-5 mb-lg-0" style="background-color: navy;">
+                </form> 
+            </div> 
+            <div class="col-12 col-lg-4 px-0 pt-5 res-border-left px-4">
+                <div class="clearfix">  
+                    <div class="float-start fs-5">
+                        3d Animator
+                    </div>
+                    <div class="float-end fs-5 py-1 px-3" style="border: 1px solid black;"> 
+                        Careers
+                    </div>
+                </div>
+                <div>
+                    <form action="#" method="post" accept-charset="utf-8">
+                        <div class="position-relative" style="bottom: 4px;">
+                            <div class="">
+                                <label for="experience">Experience :
+                                    <span style="color: red">*</span>
+                                    <span id="experienceError" class="ms-3" style="color: white; text-align: right; display: none;">
+                                    </span> 
+                                </label>
+                                <input type="number" name="experience" id="experience" placeholder="experience" class="form-control">   
+                            </div>
+                            <div class="mt-3">
+                                <label for="adddetails">Higher Qualification :
+                                    <span style="color: red">*</span>
+                                    <span id="adddetailsError" class="ms-3" style="color: white; text-align: right; display: none;">
+                                    </span> 
+                                </label>     
+                                <input type="text" name="adddetails" id="adddetails" placeholder="enter Qualification" class="form-control">   
+                            </div>
+                        </div>
+                        <input type="submit" value="Send Message" onclick="return submitexpFunction();" class="btn col-4 mt-3 border border-2 border-dark text-white" style="background-color: navy;"> 
+                    </form>
+                    <div class="mt-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12088.282892801357!2d-73.9788795!3d40.7604692!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xab4c80b6e25831dd!2sMarvel%20Entertainment!5e0!3m2!1sen!2sin!4v1634847878947!5m2!1sen!2sin" width="100%" height="280px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <div class="container-fluid" style="background-color: navy;">
+        <div class="row">
+            <div class="col-12 col-md-4 text-center py-4 text-secondary">
+                &copy; 2021 All Copyrights Reserved
+            </div>
+            <div class="col-12 col-md-4 text-center py-4 text-secondary">
+                Headquarter: Marvel Studio, New York
+            </div>
+            <div class="col-12 col-md-4 text-center py-4 text-secondary">
+                Contact: 0000 000 000, marvel@gmail.com
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap Bundle Js Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <!-- Jquery Cdn Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Site Form Validation Jquery Link -->
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+    <!-- Fontawesome CDN Link -->
+    <script src="https://kit.fontawesome.com/fc4c45a288.js" crossorigin="anonymous"></script>
+    <!-- Toggle Button Script Link -->
+    <script type="text/javascript" src="javascript/script.js"></script>
+</body>
+</html>

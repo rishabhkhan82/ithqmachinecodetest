@@ -1,0 +1,86 @@
+    /* Styling for Top Bar Icons */
+    .top-bar-icons
+    {
+        color: darkred;
+    }
+    /* Styling for Toggle Button */ 
+    #toggle-but-cont
+    {
+        background-color: black;
+        width: 50px; 
+        height: 20px; 
+        border-radius: 10px;
+    }
+    #icon-left
+    { 
+        float: left; 
+        position: relative;
+        left: 3px;
+        top: 2px;
+    }
+    #icon-right
+    { 
+        float: right;
+        position: relative;
+        right: 4px;
+        top: 2px;
+    }
+    #circle-button-cont
+    {
+        position: absolute; 
+        top: 0px; 
+        left: 0px;
+    }
+    #circle-but
+    {
+        background-color: white; 
+        border: 2px solid white;
+        border-radius: 50%; 
+        box-shadow: 0px 0px 5px white, 0px 0px 10px white;
+        padding: 0px; 
+        float: left;
+        width: 20px; 
+        height: 20px; 
+    }
+    /* Styling for Booking Form Icons */
+    .booking-form-icons
+    {
+        color: darkred;
+    }
+    /* Styling for Carousel Indicators Buttons */
+    .carousel-indicators button
+    {
+        background-color: navy;
+    }
+    h2
+    {
+        text-shadow: 0px 0px 20px red;
+    }
+    .grid-cards
+    {
+        cursor: pointer;
+    }
+
+    /* Style for The Form Elements */
+
+    .res-border-right
+        {
+            border-bottom: 1px solid #6c757d;
+        }
+        .res-border-left
+        {
+            border-top: 1px solid #6c757d;
+        }
+        @media screen and (min-width: 992px) 
+        {
+            .res-border-right
+            {
+                border-bottom: 0px;
+                border-right: 1px solid #6c757d;
+            } 
+            .res-border-left
+            {
+                border-top: 0px;
+                border-left: 1px solid #6c757d;
+            } 
+        }
