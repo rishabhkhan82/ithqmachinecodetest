@@ -1,0 +1,2 @@
+# ithqmachinecodetest
+I have made this code from scratch with best of my knowledge by keeping in mind that marvel entertainment's latest movie is releasing soon and they want their viewers to get all the latest updates about the movie and can book the tickets in theatre at their preferable location. The viewers can also contact to the marvel studio through the contact form and can also find their location on google maps. This is the first time when I saw the github dashboard and the experience is good.
